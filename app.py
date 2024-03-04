@@ -96,11 +96,11 @@ def prediction():
         # Predict sentiment
         sentiment = predict_sentiment(comment)
         if sentiment == 0:
-            st.write('Sentiment: Negative')
+            st.warning('Sentiment: Negative')
         elif sentiment == 1:
-            st.write('Sentiment: Neutral')
+            st.text('Sentiment: Neutral')
         else:
-            st.write('Sentiment: Positive')
+            st.success('Sentiment: Positive')
 
        
 
